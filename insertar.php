@@ -253,7 +253,7 @@
                     <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+                                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="/articulos/mostrar.php">
                                     <svg class="bi">
                                         <use xlink:href="#house-fill" />
                                     </svg>
@@ -268,7 +268,7 @@
                         </h6>
                         <ul class="nav flex-column mb-auto">
                             <li class="nav-item">
-                                <a class="nav-link d-flex align-items-center gap-2" href="#">
+                                <a class="nav-link d-flex align-items-center gap-2" href="/articulos/mostrar.php">
                                     <svg class="bi">
                                         <use xlink:href="#file-earmark-text" />
                                     </svg>
@@ -386,7 +386,7 @@
                             }
 
                             if (error == "") {
-                                var dir = "http://localhost/articulos/procesos.php?tipo=1&id=" + id + "&nom=" + nom + "&costo=" + costo + "&r=" + Math.random();
+                                var dir = "/articulos/procesos.php?tipo=1&id=" + id + "&nom=" + nom + "&costo=" + costo + "&r=" + Math.random();
 
                                 $.get(dir, function(result) {
                                     alert(result);

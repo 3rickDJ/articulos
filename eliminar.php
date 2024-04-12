@@ -85,7 +85,7 @@ $obj = $a->buscar($id);
                 }
 
                 if (error == "") {
-                    var dir = "http://localhost/articulos/procesos.php?tipo=3&id=" + id + "&nom=" + nom + "&costo=" + costo + "&r=" + Math.random();
+                    var dir = "/articulos/procesos.php?tipo=3&id=" + id + "&nom=" + nom + "&costo=" + costo + "&r=" + Math.random();
                     $.get(dir, function(result) {
                         //alert(result);
                         location.href = "mostrar.php?r=" + Math.random();
