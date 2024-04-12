@@ -1,0 +1,22 @@
+En este caso se hizo una practica de base de datos, donde se insertar, modificar y eliminan datos en una tabla que se creo
+con el nombre de "pruebas12024". La base de datos se creo con el myadminphp en la consola o directamenete con las 
+herramientas que proporciona xampp y con el siguiente codigo:
+
+create table articulo
+(
+id int primary key not null,
+nom varchar(500),
+costo decimal(16,6)
+);
+
+Despues de implementar el codigo en php para hacer estas consultas, se podia ejecutar el codigo en la barra de busqueda
+de nuestro navegador usando los siguientes comandos:
+
+- insertar:
+	- localhost/articulos/procesos.php?tipo=1&id=3&nom=laptop&costo=1600
+- modificar:
+	- localhost/articulos/procesos.php?tipo=1&id=3&nom=laptop&costo=1600
+- eliminar:
+	- localhost/articulos/procesos.php?tipo=1&id=3
+- nota. Los datos de cada uno pueden cambiar cada uno son ejemplos.
+Las consultas se hicieron con el phpmyadmin que contiene xampp.
