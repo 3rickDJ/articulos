@@ -22,6 +22,25 @@ class articulo{
         $sql = "delete from articulo where id = '$id'";
         $this->conn->ejecutar($sql);
     }
+
+	public function exportCSV(){
+		$sql = "select * from articulo";
+		$result = $this->conn->ejecutar($sql);
+		$line = "ID,Nombre,Costo\n";
+		if($result->num_rows>0)
+		{
+			while($row = $result->fetch_assoc())
+			{
+				$line .=$row["id"];
+				$line .=",";
+				$line .=$row["nom"];
+				$line .=",";
+				$line .=$row["nom"];
+				$line .="\n";
+			}
+		}
+		return $line;
+	}
   
 	public function table()
 	{
@@ -45,7 +64,7 @@ class articulo{
 				$line .="<tr>";
 				$line .="<td>" . $row["id"]. "</td>";
 				$line .="<td>" . $row["nom"]. "</td>";
-				$line .="<td>" . $row["costo"]. "</td>";
+				$line .="<td>" . str_pad(number_format((float)$row["costo"], 2, '.', ''), 6, '0', STR_PAD_LEFT) . "</td>";
 				$line .='<td class="text-center vertical-align-center">
 					<button type="button" class="btn btn-primary" onclick="actualizar(' . $row["id"].')">
 						<img src="img/edit.svg" alt="">
@@ -79,5 +98,6 @@ class articulo{
 		}
 		return $obj;
 	}
+
 }
 ?>

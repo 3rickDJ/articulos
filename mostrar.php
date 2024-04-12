@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
-    <title>Dashboard Template · Bootstrap v5.3</title>
+    <title>DesarrolloWeb</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
 <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -92,9 +92,7 @@
     </style>
 
 
-    <!-- Custom styles for this template -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
     <link href="./css/dashboard.css" rel="stylesheet">
   </head>
   <body>
@@ -217,7 +215,7 @@
   </ul>
 
   <div id="navbarSearch" class="navbar-search w-100 collapse">
-    <input class="form-control w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+    <input class="form-control w-100 rounded-0 border-0" type="text" placeholder="Buscar" aria-label="Search">
   </div>
 </header>
 
@@ -226,7 +224,7 @@
     <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
       <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
+          <h5 class="offcanvas-title" id="sidebarMenuLabel">DesarrolloWeb.io</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
@@ -277,8 +275,7 @@
         <h1 class="h2">Catálogos</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
-            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+            <input type="submit" onclick="location.href='export.php'" value="Descargar CSV"  class="btn btn-success">
           </div>
         </div>
       </div>
