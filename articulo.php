@@ -46,15 +46,15 @@ class articulo{
 				$line .="<td>" . $row["id"]. "</td>";
 				$line .="<td>" . $row["nom"]. "</td>";
 				$line .="<td>" . $row["costo"]. "</td>";
-				$line .='<td class="text-center">
+				$line .='<td class="text-center vertical-align-center">
 					<button type="button" class="btn btn-primary" onclick="actualizar(' . $row["id"].')">
 						<img src="img/edit.svg" alt="">
 					</button>
-				</td>
-				<td class="text-center">
 					<button type="button" class="btn btn-danger" onclick="eliminar(' . $row["id"].')">
 						<img src="img/delete.svg" alt="">
 					</button>
+				</td>
+				<td class="text-center">
 				</td>';
 				$line .="</tr>";
 			}
